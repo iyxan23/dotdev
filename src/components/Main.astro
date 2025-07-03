@@ -1,0 +1,45 @@
+---
+import Iyxan from "../assets/iyxan.svg";
+---
+
+<div class="relative h-screen w-full overflow-hidden bg-gradient-to-t from-[#ffff] to-[#7F2DE3a5] ">
+  <!-- Background layer (masked) -->
+  <div class="absolute inset-0 bg-gradient-to-t from-[#fff] via-[#7521dbdd] to-[#7419e3f0] via-90% mask-half-circle"></div>
+
+  <!-- Content goes here -->
+  <div class="invert absolute z-10 p-8 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2 items-center">
+    <div class="mb-3">
+      <Iyxan class="w-32 h-32 invert transition-all hover:rotate-2" />
+    </div>
+
+    <h1 class="text-4xl font-bold tracking-tighter font-mono pointer-events-none">iyxan.dev</h1>
+    <h1 class="text-xl tracking-tight font-mono pointer-events-none">coming soon, i guess</h1>
+
+    <div class="mt-8 flex flex-row gap-3 font-mono group *:group-hover:text-black/70 *:underline *:underline-offset-4 *:hover:text-black/100 *:hover:decoration-wavy *:transition-all *:hover:translate-y-[-2px]">
+      <a href="https://github.com/iyxan23" target="_blank">github</a>
+      <a href="https://nurihsanag.my.id" target="_blank">blog</a>
+    </div>
+  </div>
+</div>
+
+<style>
+.mask-half-circle {
+  mask-image: radial-gradient(
+    ellipse at center top,
+    black 49.9%,
+    transparent 50%
+  );
+  mask-size: 200% 100%;
+  mask-repeat: no-repeat;
+  mask-position: top;
+
+  -webkit-mask-image: radial-gradient(
+    ellipse at center top,
+    black 49.9%,
+    transparent 50%
+  );
+  -webkit-mask-size: 200% 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top;
+}
+</style>
